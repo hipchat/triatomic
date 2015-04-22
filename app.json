@@ -1,0 +1,17 @@
+{
+  "name": "Hubot for HipChat",
+  "description": "A helpful bot for your HipChat group",
+  "repository": "https://github.com/hipchat/triatomic",
+  "logo": "https://raw.githubusercontent.com/hipchat/triatomic/master/logo.png",
+  "keywords": [
+    "hubot",
+    "hipchat",
+    "bot",
+    "chat",
+    "heroku"
+  ],
+  "addons": [
+    "redistogo"
+  ],
+  "env": {}
+}
