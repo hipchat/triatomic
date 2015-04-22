@@ -17,6 +17,12 @@ scripts.
 [yeoman]: http://yeoman.io
 [generator-hubot]: https://github.com/github/generator-hubot
 
+### Why "Triatomic"?
+
+HipChat Hubot for Heroku is kind of a mouthful. Abbreviated, you get
+HHH, which is the molecular abbreviation to triatomic hydrogen, which in
+turn sounds cooler than "HHH".  Deal with it.
+
 ### Running Triatomic Locally
 
 You can test your hubot by running the following, however some plugins will not
