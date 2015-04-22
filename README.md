@@ -146,12 +146,23 @@ button and fill out the required fields!
     % heroku create --stack cedar
     % git push heroku master
 
+    If you run into any problems, checkout Heroku's [docs][heroku-node-docs].
+
 If your Heroku account has been verified you can run the following to enable
 and add the Redis to Go addon to your app.
 
     % heroku addons:add redistogo:nano
 
-If you run into any problems, checkout Heroku's [docs][heroku-node-docs].
+Next you will need to set some environment variables for your bot to know how
+to connect to HipChat.  At a minimum, you will need to create a new user for
+your bot and then set the following:
+
+    % heroku config:set HUBOT_HIPCHAT_JID=123_456@chat.hipchat.com
+    % heroku config:set HUBOT_HIPCHAT_PASSWORD=yourbotpassword
+
+Obviously, replace the example values with your own.  See the
+[HuBot HipChat documentation][hubot-hipchat] for more information on the
+available environment variables you can use.
 
 More detailed documentation can be found on the [deploying hubot onto
 Heroku][deploy-heroku] wiki page.
@@ -166,31 +177,6 @@ hubot onto Windows][deploy-windows] wiki pages.
 [deploy-heroku]: https://github.com/github/hubot/blob/master/docs/deploying/heroku.md
 [deploy-unix]: https://github.com/github/hubot/blob/master/docs/deploying/unix.md
 [deploy-windows]: https://github.com/github/hubot/blob/master/docs/deploying/unix.md
-
-## Campfire Variables
-
-If you are using the Campfire adapter you will need to set some environment
-variables. If not, refer to your adapter documentation for how to configure it,
-links to the adapters can be found on [Hubot Adapters][hubot-adapters].
-
-Create a separate Campfire user for your bot and get their token from the web
-UI.
-
-    % heroku config:add HUBOT_CAMPFIRE_TOKEN="..."
-
-Get the numeric IDs of the rooms you want the bot to join, comma delimited. If
-you want the bot to connect to `https://mysubdomain.campfirenow.com/room/42`
-and `https://mysubdomain.campfirenow.com/room/1024` then you'd add it like
-this:
-
-    % heroku config:add HUBOT_CAMPFIRE_ROOMS="42,1024"
-
-Add the subdomain hubot should connect to. If you web URL looks like
-`http://mysubdomain.campfirenow.com` then you'd add it like this:
-
-    % heroku config:add HUBOT_CAMPFIRE_ACCOUNT="mysubdomain"
-
-[hubot-adapters]: https://github.com/github/hubot/blob/master/docs/adapters.md
 
 ## Restart the bot
 
