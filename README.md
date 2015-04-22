@@ -17,7 +17,9 @@ scripts.
 [yeoman]: http://yeoman.io
 [generator-hubot]: https://github.com/github/generator-hubot
 
-### Why name this "Triatomic"?
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/hipchat/triatomic)
+
+### Why "Triatomic"?
 
 HipChat Hubot for Heroku is kind of a mouthful. Abbreviated, you get
 HHH, which is the molecular abbreviation to triatomic hydrogen, which in
