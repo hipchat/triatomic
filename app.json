@@ -13,5 +13,46 @@
   "addons": [
     "redistogo"
   ],
-  "env": {}
+  "env": {
+    "BUILDPACK_URL": {
+      "value": "https://github.com/heroku/heroku-buildpack-nodejs",
+      "required": true
+    },
+    "HUBOT_HIPCHAT_JID": {
+      "description": "Your bot's Jabber ID which can be found in the XMPP/Jabber settings for your bot's HipChat user account; e.g. 123_456@chat.hipchat.com",
+      "required": true
+    },
+    "HUBOT_HIPCHAT_PASSWORD": {
+      "description": "The password for your bot's HipChat user account.",
+      "required": true
+    },
+    "HUBOT_HIPCHAT_ROOMS": {
+      "description": "A comma-separated list of room JIDs that you want your bot to join.",
+      "required": false
+    },
+    "HUBOT_HIPCHAT_ROOMS_BLACKLIST": {
+      "description": "A comma-separated list of room JIDs that you DON'T want your bot to join.",
+      "required": false
+    },
+    "HUBOT_HIPCHAT_JOIN_ROOMS_ON_INVITE": {
+      "description": "Setting this to `false` will prevent the HipChat adapter from auto-joining rooms when invited.",
+      "required": false
+    },
+    "HUBOT_HIPCHAT_HOST": {
+      "description": "Use this to connect to a HipChat host other than `hipchat.com`",
+      "required": false
+    },
+    "HUBOT_HIPCHAT_XMPP_DOMAIN": {
+      "description": "Set to `btf.hipchat.com` if using a self-hosted HipChat Server.",
+      "required": false
+    },
+    "HUBOT_LOG_LEVEL": {
+      "description": "Set to `debug` to enable detailed debug logging.",
+      "required": false
+    },
+    "HUBOT_HIPCHAT_RECONNECT": {
+      "description": "Set to `false` to prevent the HipChat adapter from auto-reconnecting if it detects a server error or disconnection.",
+      "required": false
+    },
+  }
 }
