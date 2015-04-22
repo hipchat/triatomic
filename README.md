@@ -137,7 +137,7 @@ from `external-scripts.json` and you don't need to worry about redis at all.
 The easy way to get Triatomic running on Heroku is to to click this big purple
 button and fill out the required fields!
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/heroku/node-js-sample)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/hipchat/triatomic)
 
 ### The Slightly Harder Way
 
