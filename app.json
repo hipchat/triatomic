@@ -53,6 +53,6 @@
     "HUBOT_HIPCHAT_RECONNECT": {
       "description": "Set to `false` to prevent the HipChat adapter from auto-reconnecting if it detects a server error or disconnection.",
       "required": false
-    },
+    }
   }
 }
