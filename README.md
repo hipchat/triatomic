@@ -1,4 +1,4 @@
-[[https://raw.githubusercontent.com/hipchat/triatomic/master/logo.png | width = 200px]]
+<img src="https://raw.githubusercontent.com/hipchat/triatomic/master/logo.png" width="200">
 
 # Triatomic: HipChat Hubot for Heroku
 
