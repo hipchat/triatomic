@@ -186,3 +186,7 @@ hubot onto Windows][deploy-windows] wiki pages.
 
 You may want to get comfortable with `heroku logs` and `heroku restart` if
 you're having issues.
+
+## Thanks
+
+Special thanks to [Robohash](http://robohash.org) for the sweet logo :)
