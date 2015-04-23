@@ -14,12 +14,8 @@
     "redistogo"
   ],
   "env": {
-    "BUILDPACK_URL": {
-      "value": "https://github.com/heroku/heroku-buildpack-nodejs",
-      "required": true
-    },
     "HUBOT_HIPCHAT_JID": {
-      "description": "Your bot's Jabber ID which can be found in the XMPP/Jabber settings for your bot's HipChat user account; e.g. 123_456@chat.hipchat.com",
+      "description": "Your bot's Jabber ID which can be found in the XMPP/Jabber settings for your bot's HipChat user account; e.g. 123_456@chat.hipchat.com.",
       "required": true
     },
     "HUBOT_HIPCHAT_PASSWORD": {
@@ -39,7 +35,7 @@
       "required": false
     },
     "HUBOT_HIPCHAT_HOST": {
-      "description": "Use this to connect to a HipChat host other than `hipchat.com`",
+      "description": "Use this to connect to a HipChat host other than `hipchat.com`.",
       "required": false
     },
     "HUBOT_HIPCHAT_XMPP_DOMAIN": {
@@ -57,6 +53,11 @@
     "HUBOT_HEROKU_KEEPALIVE_URL": {
       "value": "https://YOUR_BOT_APP.herokuapp.com",
       "description": "Set to use the subdomain of this bot to keep it awake",
+      "required": true
+    },
+    "BUILDPACK_URL": {
+      "value": "https://github.com/heroku/heroku-buildpack-nodejs",
+      "description": "Only change this if you are sure you need to.",
       "required": true
     }
   }
