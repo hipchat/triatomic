@@ -46,7 +46,7 @@
       "description": "Set to `false` to prevent the HipChat adapter from auto-reconnecting if it detects a server error or disconnection.",
       "required": false
     },
-    "HUBOT_HIPCHAT_JOIN_EXTERNAL_ROOMS": {
+    "HUBOT_HIPCHAT_JOIN_PUBLIC_ROOMS": {
       "value": "",
       "description": "Set to `false` to prevent the bot from joining guest-accessible rooms.",
       "required": false
