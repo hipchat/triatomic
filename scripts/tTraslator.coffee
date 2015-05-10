@@ -10,5 +10,6 @@ module.exports = (robot) ->
              "Mathematical equation of comedy used to be setup, punchline. Today's comedy is setup, punchline, then \"Awkwaaard.\" Nothing is more awkward than destroying all that which created Funnybot.",
              "Thank you boys for teaching me that comedy and logic do not go together. I understand now that comedy should be left to the imperfect biological beings."]
 
-  robot.respond /(.*)/i, (res) ->
-    res.reply "whatever you say sir!"
+  robot.respond /#(\w)+/i, (res) ->
+    word = res.match[1] 
+    res.reply "#{word}!! okay, whatever you say sir!"
