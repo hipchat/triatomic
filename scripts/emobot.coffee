@@ -111,5 +111,5 @@ module.exports = (robot)  ->
 			"(zoidberg)", 
 			"(zzz)"]
 
-  robot.hear //i, (res) ->
+  robot.hear /emo/i, (res) ->
     res.send res.random quotes
