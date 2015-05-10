@@ -15,7 +15,7 @@ module.exports = (robot) ->
     robot.http("https://www.googleapis.com/language/translate/v2?key=AIzaSyBfy0SB_eRGbNC-0sVo6qTS9NGex8fo_2s&source=en&target=jp&q=walk")
     .get() (err, res, body) ->
       if err
-        res.reply "Encountered an error :( #{err}"
+        res.send "Encountered an error :( #{err}"
         return
       data = JSON.parse(body)
-      res.reply "#{data.translatedText}"
+      res.send "#{data.translatedText}"
