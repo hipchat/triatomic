@@ -17,5 +17,5 @@ module.exports = (robot) ->
       if err
         res.send "Encountered an error :( #{err}"
         return
-    data = JSON.parse(body)
-    res.send "#{data.translatedText}"
+        data = JSON.parse(body)
+        console.log data
